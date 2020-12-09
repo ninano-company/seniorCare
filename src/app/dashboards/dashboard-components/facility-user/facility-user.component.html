@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="table-responsive">
+      <table class="table v-middle">
+          <thead>
+              <tr class="bg-light">
+                  <th class="border-top-0 text-center">번호</th>
+                  <th class="border-top-0 text-center">이름</th>
+                  <th class="border-top-0 text-center">성별</th>
+                  <th class="border-top-0 text-center">나이</th>
+                  <th class="border-top-0 text-center">특이사항</th>
+                  <th class="border-top-0 text-center">최근 방문일</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr *ngFor="let user of users">
+                  <td class="text-center">{{ user.id }}</td>
+                  <td class="text-center">{{ user.name }}</td>
+                  <td class="text-center">{{ user.gender }}</td>
+                  <td class="text-center">{{ user.age }}</td>
+                  <td>{{ user.desc }}</td>
+                  <td class="text-center">{{ user.latest }}</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>

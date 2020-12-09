@@ -1,0 +1,27 @@
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">아산주간보호센터</h4>
+        <ngb-tabset [justify]="currentJustify">
+            <ngb-tab title="타임라인">
+                <ng-template ngbTabContent>
+                  <app-facility-timeline></app-facility-timeline>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="요청관리">
+                <ng-template ngbTabContent>
+                  <app-facility-request></app-facility-request>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="이용자 현황">
+                <ng-template ngbTabContent>
+                  <app-facility-user></app-facility-user>
+                </ng-template>
+            </ngb-tab>
+            <ngb-tab title="기기 현황">
+                <ng-template ngbTabContent>
+                  <app-facility-robot></app-facility-robot>
+                </ng-template>
+            </ngb-tab>
+        </ngb-tabset>
+    </div>
+</div>

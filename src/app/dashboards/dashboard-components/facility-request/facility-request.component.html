@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table v-middle">
+            <thead>
+                <tr class="bg-light">
+                    <th class="border-top-0 text-center">번호</th>
+                    <th class="border-top-0 text-center">상태</th>
+                    <th class="border-top-0 text-center">출처</th>
+                    <th class="border-top-0 text-center">내용</th>
+                    <th class="border-top-0 text-center">요청인</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let request of requests">
+                    <td class="text-center">{{ request.id }}</td>
+                    <td class="text-center">
+                        <label class="label label-{{ request.color }}">{{ request.progress }}</label>
+                    </td>
+                    <td class="text-center">{{ request.from }}</td>
+                    <td>{{ request.desc }}</td>
+                    <td class="text-center">{{ request.who }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
