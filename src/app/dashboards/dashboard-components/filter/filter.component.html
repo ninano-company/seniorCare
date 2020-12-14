@@ -1,0 +1,28 @@
+<div class="card">
+  <div class="card-body">
+      <h4 class="card-title text-center">필터</h4>
+      <hr>
+      <fieldset class="checkbox" >
+        <label>
+            <input type="checkbox" value="" > {{ task.name }}
+        </label>
+      </fieldset>
+      <div *ngFor="let subtask of task.subtasks">
+        <fieldset class="checkbox m-l-10">
+          <label>
+              <input type="checkbox" value="" > {{ subtask.name }}
+          </label>
+        </fieldset>
+      </div>
+      <hr>
+      <div class="col-12 m-b-20">
+        <div class="form-group">
+          <label for="datec" class="control-label col-form-label">날짜별</label>
+          <input type="date" class="form-control m-b-10" id="datea">
+          <input type="date" class="form-control m-b-10" id="dateb">
+        </div>
+        <div class="col-12 m-b-20">
+          <button type="button" class="btn btn-block btn-outline-success p-t-10 p-b-10">적용</button>
+        </div>
+  </div>
+</div>

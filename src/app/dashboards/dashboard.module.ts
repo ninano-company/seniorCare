@@ -53,6 +53,9 @@ import { FacilityRobotComponent } from './dashboard-components/facility-robot/fa
 import { FacilityRequestComponent } from './dashboard-components/facility-request/facility-request.component';
 import { SeniorListComponent } from './senior-list/senior-list.component';
 import { SeniorDetailComponent } from './senior-detail/senior-detail.component';
+import { FilterComponent } from './dashboard-components/filter/filter.component';
+import { CardListComponent } from './dashboard-components/card-list/card-list.component';
+import { CctvComponent } from './cctv/cctv.component';
 
 @NgModule({
     imports: [
@@ -106,6 +109,9 @@ import { SeniorDetailComponent } from './senior-detail/senior-detail.component';
         FacilityRequestComponent,
         SeniorListComponent,
         SeniorDetailComponent,
+        FilterComponent,
+        CardListComponent,
+        CctvComponent,
     ]
 })
 export class DashboardModule { }

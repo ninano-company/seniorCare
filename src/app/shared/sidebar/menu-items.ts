@@ -76,7 +76,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '/apps/email',
+        path: '/dashboard/cctv',
         title: 'CCTV 관리',
         icon: 'icon-Mailbox-Empty',
         class: '',
