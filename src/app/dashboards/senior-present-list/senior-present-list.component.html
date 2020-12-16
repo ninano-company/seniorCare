@@ -1,0 +1,23 @@
+<h3 class="card-title">출석부 리스트</h3>
+<div class="card">
+    <div class="table-responsive">
+        <table class="table v-middle">
+            <thead>
+                <tr>
+                    <th class="border-top-0 text-center">날짜</th>
+                    <th class="border-top-0 text-center">출석인원</th>
+                    <th class="border-top-0 text-center">체온 이상자</th>
+                    <th class="border-top-0 text-center">복지 시설</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let present of presents">
+                    <td class="text-center">{{ present.dateTime }}</td>
+                    <td class="text-center">{{ present.presentNumber }}</td>
+                    <td class="text-center">{{ present.temperatureStranger }}</td>
+                    <td class="text-center">{{ present.facility }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>

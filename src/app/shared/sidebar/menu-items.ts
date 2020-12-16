@@ -66,7 +66,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/ticketdetails',
+                path: '/dashboard/seniorPresentList',
                 title: '출석부',
                 icon: '',
                 class: '',

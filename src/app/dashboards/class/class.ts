@@ -30,9 +30,9 @@ export interface Robot {
 }
 
 export interface cctv {
-  id : number;
-  img : string;
-  datetime : string;
+    id : number;
+    img : string;
+    datetime : string;
     desc : string;
     center : string;
 }
@@ -45,4 +45,12 @@ export interface cctvFilter {
 export interface RobotFilter {
     id : number;
     name : string;
+}
+
+export interface PresentList {
+    id: number;
+    dateTime:string;
+    presentNumber:number;
+    temperatureStranger: number;
+    facility: string;
 }
