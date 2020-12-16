@@ -103,6 +103,6 @@ export const DashboardRoutes: Routes = [
         }
       }
     ]
-  }
+  },
   
 ];

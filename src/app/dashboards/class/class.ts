@@ -53,4 +53,7 @@ export interface PresentList {
     presentNumber:number;
     temperatureStranger: number;
     facility: string;
+    bodytemperature: number;
+    protcetor: string;
+    
 }

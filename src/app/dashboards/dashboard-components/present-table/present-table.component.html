@@ -11,10 +11,12 @@
             </thead>
             <tbody>
                 <tr *ngFor="let present of presents">
-                    <td class="text-center">{{ present.dateTime }}</td>
-                    <td class="text-center">{{ present.presentNumber }}</td>
-                    <td class="text-center">{{ present.temperatureStranger }}</td>
-                    <td class="text-center">{{ present.facility }}</td>
+                    <a href="#/dashboard/presentDetail">
+                        <td class="text-center">{{ present.dateTime }}</td>
+                        <td class="text-center">{{ present.presentNumber }}</td>
+                        <td class="text-center">{{ present.temperatureStranger }}</td>
+                        <td class="text-center">{{ present.facility }}</td>
+                    </a>
                 </tr>
             </tbody>
         </table>

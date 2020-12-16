@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="card">
+            <div class="form-group row">
+              <label for="fname" class="col-sm-2 text-right control-label col-form-label">날짜</label>
+              <div class="col-sm-4">
+                  <input type="text" class="form-control" id="fname" value="2020/12/16">
+              </div>
+              <label for="fname" class="col-sm-2 text-right control-label col-form-label">출석자 수</label>
+              <div class="col-sm-4">
+                  <input type="text" class="form-control" id="fname" value="10">
+              </div>
+            </div>
+      </div>
+      <div class="card">
+        <div class="table-responsive">
+            <table class="table v-middle">
+                <thead>
+                    <tr class="bg-light">
+                        <th class="border-top-0 text-center">번호</th>
+                        <th class="border-top-0 text-center">사진</th>
+                        <th class="border-top-0 text-center">이름</th>
+                        <th class="border-top-0 text-center">성별</th>
+                        <th class="border-top-0 text-center">나이</th>
+                        <th class="border-top-0 text-center">특이사항</th>
+                        <th class="border-top-0 text-center">체온</th>
+                        <th class="border-top-0 text-center">보호자 동행</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let present of presents">
+                        <td class="text-center">{{ User.id }}</td>
+                        <td class="text-center">
+                            <img src="assets/images/users/{{ User.photo }}.jpg"
+                            width="100%"
+                            alt="어르신사진"/></td>
+                        <td class="text-center">{{ User.name }}</td>
+                        <td class="text-center">{{ User.gender }}</td>
+                        <td class="text-center">{{ User.age }}</td>
+                        <td class="text-center">{{ present.bodytemperature }}</td>
+                        <td class="text-center">{{ present.protcetor }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+</div>
+  

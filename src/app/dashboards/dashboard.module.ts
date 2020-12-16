@@ -58,6 +58,8 @@ import { CardListComponent } from './dashboard-components/card-list/card-list.co
 import { CctvComponent } from './cctv/cctv.component';
 import { SeniorPresentListComponent } from './senior-present-list/senior-present-list.component';
 import { PresentTableComponent } from './dashboard-components/present-table/present-table.component';
+import { PresentDetailComponent } from './dashboard-components/present-detail/present-detail.component';
+import { SeniorPresentDetailComponent } from './senior-present-detail/senior-present-detail.component';
 
 @NgModule({
     imports: [
@@ -116,6 +118,8 @@ import { PresentTableComponent } from './dashboard-components/present-table/pres
         CctvComponent,
         SeniorPresentListComponent,
         PresentTableComponent,
+        PresentDetailComponent,
+        SeniorPresentDetailComponent,
     ]
 })
 export class DashboardModule { }
