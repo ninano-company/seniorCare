@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-12">
       <div class="card">
-            <div class="form-group row">
+            <div class="form-group row" style="padding-top: 20px">
               <label for="fname" class="col-sm-2 text-right control-label col-form-label">날짜</label>
               <div class="col-sm-4">
                   <input type="text" class="form-control" id="fname" value="2020/12/16">
@@ -28,17 +28,18 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let present of presents">
-                        <td class="text-center">{{ User.id }}</td>
+                    <tr *ngFor="let user of users">
+                        <td class="text-center">{{ user.id }}</td>
                         <td class="text-center">
-                            <img src="assets/images/users/{{ User.photo }}.jpg"
-                            width="100%"
+                            <img src="assets/images/users/{{ user.photo }}"
+                            width="100px"
                             alt="어르신사진"/></td>
-                        <td class="text-center">{{ User.name }}</td>
-                        <td class="text-center">{{ User.gender }}</td>
-                        <td class="text-center">{{ User.age }}</td>
-                        <td class="text-center">{{ present.bodytemperature }}</td>
-                        <td class="text-center">{{ present.protcetor }}</td>
+                        <td class="text-center">{{ user.name }}</td>
+                        <td class="text-center">{{ user.gender }}</td>
+                        <td class="text-center">{{ user.age }}</td>
+                        <td class="text-center">{{ user.desc }}</td>
+                        <td class="text-center">{{ user.temp }}</td>
+                        <td class="text-center">{{ user.guardian }}</td>
                     </tr>
                 </tbody>
             </table>

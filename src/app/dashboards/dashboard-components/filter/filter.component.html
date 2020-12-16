@@ -4,13 +4,13 @@
       <hr>
       <fieldset class="checkbox" >
         <label>
-            <input type="checkbox" value="" > {{ task.name }}
+            <input type="checkbox" value="" > {{ cctvFilters.name }}
         </label>
       </fieldset>
-      <div *ngFor="let subtask of task.subtasks">
+      <div *ngFor="let subFilter of cctvFilters.subFilters">
         <fieldset class="checkbox m-l-10">
           <label>
-              <input type="checkbox" value="" > {{ subtask.name }}
+              <input type="checkbox" value="" > {{ subFilter.name }}
           </label>
         </fieldset>
       </div>

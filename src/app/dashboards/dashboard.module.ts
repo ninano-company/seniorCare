@@ -60,6 +60,21 @@ import { SeniorPresentListComponent } from './senior-present-list/senior-present
 import { PresentTableComponent } from './dashboard-components/present-table/present-table.component';
 import { PresentDetailComponent } from './dashboard-components/present-detail/present-detail.component';
 import { SeniorPresentDetailComponent } from './senior-present-detail/senior-present-detail.component';
+import { DevicesComponent } from './devices/devices.component';
+import { DeviceFilterComponent } from './dashboard-components/device-filter/device-filter.component';
+import { DeviceTableComponent } from './dashboard-components/device-table/device-table.component';
+import { WorkersComponent } from './workers/workers.component';
+import { WorkersFilterComponent } from './dashboard-components/workers-filter/workers-filter.component';
+import { WorkersTableComponent } from './dashboard-components/workers-table/workers-table.component';
+import { ActivityListComponent } from './activity-list/activity-list.component';
+import { ActivityListFilterComponent } from './dashboard-components/activity-list-filter/activity-list-filter.component';
+import { ActivityListTableComponent } from './dashboard-components/activity-list-table/activity-list-table.component';
+import { ActivityPhotoComponent } from './activity-photo/activity-photo.component';
+import { ActivityPhotoFilterComponent } from './dashboard-components/activity-photo-filter/activity-photo-filter.component';
+import { ActivityPhotoListComponent } from './dashboard-components/activity-photo-list/activity-photo-list.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TasksFilterComponent } from './dashboard-components/tasks-filter/tasks-filter.component';
+import { TasksTableComponent } from './dashboard-components/tasks-table/tasks-table.component';
 
 @NgModule({
     imports: [
@@ -120,6 +135,21 @@ import { SeniorPresentDetailComponent } from './senior-present-detail/senior-pre
         PresentTableComponent,
         PresentDetailComponent,
         SeniorPresentDetailComponent,
+        DevicesComponent,
+        DeviceFilterComponent,
+        DeviceTableComponent,
+        WorkersComponent,
+        WorkersFilterComponent,
+        WorkersTableComponent,
+        ActivityListComponent,
+        ActivityListFilterComponent,
+        ActivityListTableComponent,
+        ActivityPhotoComponent,
+        ActivityPhotoFilterComponent,
+        ActivityPhotoListComponent,
+        TasksComponent,
+        TasksFilterComponent,
+        TasksTableComponent,
     ]
 })
 export class DashboardModule { }

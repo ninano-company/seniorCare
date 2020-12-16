@@ -7,6 +7,8 @@ export interface User {
     desc : string;
     latest : string;
     center : string;
+    temp? : string;
+    guardian? : string;
 }
 
 export interface Request {
@@ -37,16 +39,6 @@ export interface cctv {
     center : string;
 }
 
-export interface cctvFilter {
-    id : number;
-    name : string;
-}
-
-export interface RobotFilter {
-    id : number;
-    name : string;
-}
-
 export interface PresentList {
     id: number;
     dateTime:string;
@@ -56,4 +48,39 @@ export interface PresentList {
     bodytemperature: number;
     protcetor: string;
     
+}
+
+export interface Filter {
+    name: string;
+    completed: string;
+    subFilters?: Filter[];
+}
+
+export interface Worker {
+    task : string;
+    name : string;
+    phone : string;
+    center : string;
+    region : string;
+    worked : string;
+}
+
+export interface Activity {
+    name : string;
+    teacher : string;
+    phone : string;
+    center : string;
+    color : string;
+    progress : string;
+    datetime : string;
+    photo : string;
+}
+
+export interface Task {
+    id : string;
+    name : string;
+    event : string;
+    center : string;
+    present : number;
+    datetime : string;
 }

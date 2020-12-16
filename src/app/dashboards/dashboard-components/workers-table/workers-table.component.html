@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table v-middle">
+            <thead>
+                <tr class="bg-light">
+                    <th class="border-top-0 text-center">업무</th>
+                    <th class="border-top-0 text-center">이름</th>
+                    <th class="border-top-0 text-center">연락처</th>
+                    <th class="border-top-0 text-center">시설</th>
+                    <th class="border-top-0 text-center">지역</th>
+                    <th class="border-top-0 text-center">활동일</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let worker of workers">
+                    <td class="text-center">{{ worker.task }}</td>
+                    <td class="text-center">{{ worker.name }}</td>
+                    <td class="text-center">{{ worker.phone }}</td>
+                    <td class="text-center">{{ worker.center }}</td>
+                    <td class="text-center">{{ worker.region }}</td>
+                    <td class="text-center">{{ worker.worked }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

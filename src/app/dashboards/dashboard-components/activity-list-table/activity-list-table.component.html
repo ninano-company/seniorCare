@@ -1,0 +1,28 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table v-middle">
+            <thead>
+                <tr class="bg-light">
+                    <th class="border-top-0 text-center">프로그램</th>
+                    <th class="border-top-0 text-center">강사</th>
+                    <th class="border-top-0 text-center">연락처</th>
+                    <th class="border-top-0 text-center">복지시설</th>
+                    <th class="border-top-0 text-center">진행</th>
+                    <th class="border-top-0 text-center">일정</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let activity of activities">
+                    <td class="text-center">{{ activity.name }}</td>
+                    <td class="text-center">{{ activity.teacher }}</td>
+                    <td class="text-center">{{ activity.phone }}</td>
+                    <td class="text-center">{{ activity.center }}</td>
+                    <td class="text-center">
+                        <label class="label label-{{ activity.color }}">{{ activity.progress }}</label>
+                    </td>
+                    <td class="text-center">{{ activity.datetime }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

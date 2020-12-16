@@ -6,6 +6,12 @@ import { SeniorListComponent } from './senior-list/senior-list.component';
 import { SeniorDetailComponent } from './senior-detail/senior-detail.component';
 import { SeniorPresentListComponent } from './senior-present-list/senior-present-list.component';
 import { CctvComponent } from './cctv/cctv.component';
+import { SeniorPresentDetailComponent } from './senior-present-detail/senior-present-detail.component';
+import { DevicesComponent } from './devices/devices.component';
+import { WorkersComponent } from './workers/workers.component';
+import { ActivityListComponent } from './activity-list/activity-list.component';
+import { ActivityPhotoComponent } from './activity-photo/activity-photo.component';
+import { TasksComponent } from './tasks/tasks.component';
 
 export const DashboardRoutes: Routes = [
   {
@@ -104,5 +110,100 @@ export const DashboardRoutes: Routes = [
       }
     ]
   },
-  
+  {
+    path: '',
+    children: [
+      {
+        path: 'seniorPresentDetail',
+        component: SeniorPresentDetailComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'seniorPresentDetail', url: '/seniorPresentDetail' },
+            { title: 'seniorPresentDetail' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'devices',
+        component: DevicesComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'devices', url: '/devices' },
+            { title: 'devices' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'workers',
+        component: WorkersComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'workers', url: '/workers' },
+            { title: 'workers' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'activityList',
+        component: ActivityListComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'activityList', url: '/activityList' },
+            { title: 'activityList' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'activityPhoto',
+        component: ActivityPhotoComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'activityPhoto', url: '/activityPhoto' },
+            { title: 'activityPhoto' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'tasks',
+        component: TasksComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'tasks', url: '/tasks' },
+            { title: 'tasks' }
+          ]
+        }
+      }
+    ]
+  }
 ];

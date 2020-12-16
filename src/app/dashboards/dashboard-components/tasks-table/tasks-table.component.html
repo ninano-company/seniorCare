@@ -1,0 +1,26 @@
+<div class="card">
+    <div class="table-responsive">
+        <table class="table v-middle">
+            <thead>
+                <tr class="bg-light">
+                    <th class="border-top-0 text-center">문서번호</th>
+                    <th class="border-top-0 text-center">작성자</th>
+                    <th class="border-top-0 text-center">사건사고</th>
+                    <th class="border-top-0 text-center">시설</th>
+                    <th class="border-top-0 text-center">출입인원</th>
+                    <th class="border-top-0 text-center">작성날짜</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let task of tasks">
+                    <td class="text-center">{{ task.id }}</td>
+                    <td class="text-center">{{ task.name }}</td>
+                    <td class="text-center">{{ task.event }}</td>
+                    <td class="text-center">{{ task.center }}</td>
+                    <td class="text-center">{{ task.present }}</td>
+                    <td class="text-center">{{ task.datetime }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

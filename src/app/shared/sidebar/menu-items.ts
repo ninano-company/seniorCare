@@ -84,7 +84,7 @@ export const ROUTES: RouteInfo[] = [
         submenu: []
     },
     {
-        path: '/apps/email',
+        path: '/dashboard/devices',
         title: '돌봄 기기 관리',
         icon: 'icon-Mailbox-Empty',
         class: '',
@@ -92,7 +92,7 @@ export const ROUTES: RouteInfo[] = [
         submenu: []
     },
     {
-        path: '/apps/email',
+        path: '/dashboard/workers',
         title: '인력 관리',
         icon: 'icon-Mailbox-Empty',
         class: '',
@@ -107,7 +107,7 @@ export const ROUTES: RouteInfo[] = [
         extralink: false,
         submenu: [
             {
-                path: '/apps/ticketlist',
+                path: '/dashboard/activityList',
                 title: '목록',
                 icon: '',
                 class: '',
@@ -123,7 +123,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/ticketdetails',
+                path: '/dashboard/activityPhoto',
                 title: '사진첩',
                 icon: '',
                 class: '',
@@ -133,7 +133,7 @@ export const ROUTES: RouteInfo[] = [
         ]
     },
     {
-        path: '/apps/email',
+        path: '/dashboard/tasks',
         title: '업무 관리',
         icon: 'icon-Mailbox-Empty',
         class: '',
