@@ -12,6 +12,9 @@ import { WorkersComponent } from './workers/workers.component';
 import { ActivityListComponent } from './activity-list/activity-list.component';
 import { ActivityPhotoComponent } from './activity-photo/activity-photo.component';
 import { TasksComponent } from './tasks/tasks.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { VideoplayComponent } from './videoplay/videoplay.component';
+import { DietaryComponent } from './dietary/dietary.component';
 
 export const DashboardRoutes: Routes = [
   {
@@ -205,5 +208,54 @@ export const DashboardRoutes: Routes = [
         }
       }
     ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'schedule',
+        component: ScheduleComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'schedule', url: '/schedule' },
+            { title: 'schedule' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'videoplay',
+        component: VideoplayComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'videoplay', url: '/videoplay' },
+            { title: 'videoplay' }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    children: [
+      {
+        path: 'dietary',
+        component: DietaryComponent,
+        data: {
+          title: 'Dashboard 1',
+          urls: [
+            { title: 'dietary', url: '/dietary' },
+            { title: 'dietary' }
+          ]
+        }
+      }
+    ]
   }
+  
 ];

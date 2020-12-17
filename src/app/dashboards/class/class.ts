@@ -84,3 +84,18 @@ export interface Task {
     present : number;
     datetime : string;
 }
+
+export interface Video {
+    id: number;
+    name: string;
+    uploaded: string;
+    title : string;
+    url : string;
+}
+export interface Dietary {
+    year: number;
+    month: number;
+    day: number;
+    meals?: string[];
+    url : string;
+}

@@ -1,0 +1,37 @@
+.videoWrap {
+    padding-top:30px;
+}
+.videoheader h3 {
+    float:left;
+}
+.videoheader .btn-info{
+    float: right;
+}
+
+.videobox {
+    box-sizing: border-box;
+    padding: 20px 5%;
+ }
+.videobox video { 
+    width:100%; 
+}
+.videobox .info{
+    box-sizing: border-box;
+    padding: 0 3%;
+}
+.videobox .info span { 
+    float: left;
+}
+.videobox .info button { 
+    float: right;
+}
+.videobox .info::after{
+    content: ""; 
+    display: block; 
+    clear:both;
+}
+.videoTitle{
+    
+    font-size: 1.3rem;
+    font-weight: bold;
+}

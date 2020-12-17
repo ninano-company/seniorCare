@@ -1,0 +1,23 @@
+<div class="videoWrap">
+  <div class="card videoheader">
+    <div class="card-body">
+        <h3>동영상 관리</h3>
+        <button class="btn btn-info"> 동영상 게시 </button>
+    </div>
+  </div>
+  <div class="card">
+    <div *ngFor="let video of videos" class="card-body videobox">
+      <div class="text-center">
+        <video controls>
+          <source src="../../../assets/video/{{video.url}}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="info">
+        <span>게시날짜: {{video.uploaded}}</span>
+        <button class="btn btn-danger">삭제</button>
+      </div>
+      <p class="videoTitle">{{video.title}}</p>
+    </div>
+  </div>
+</div>

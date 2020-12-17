@@ -1,0 +1,32 @@
+<div class="dietaryWrap">
+    <div class="card header">
+        <button class="upload">식단등록</button>
+        <ul>
+            <li><button>1월</button></li>
+            <li><button>2월</button></li>
+            <li><button>3월</button></li>
+            <li><button>4월</button></li>
+            <li><button>5월</button></li>
+            <li><button>5월</button></li>
+            <li><button>6월</button></li>
+            <li><button>7월</button></li>
+            <li><button>8월</button></li>
+            <li><button>9월</button></li>
+            <li><button>10월</button></li>
+            <li><button>11월</button></li>
+            <li><button>12월</button></li>
+        </ul>
+    </div>
+    <div class="card body">
+        <div class="card bob" *ngFor="let dietary of dietarys">
+            <div class="left"></div>
+            <div class="right">
+                <p><span>{{dietary.year}}</span><span>{{dietary.month}}</span><span>{{dietary.day}}</span></p>
+                <ul>
+                    <li *ngFor="let meal of dietary.meals">{{meal}}</li>
+                </ul>
+            </div>
+            <span class="menu"></span>
+        </div>
+    </div>
+</div>

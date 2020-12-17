@@ -75,6 +75,9 @@ import { ActivityPhotoListComponent } from './dashboard-components/activity-phot
 import { TasksComponent } from './tasks/tasks.component';
 import { TasksFilterComponent } from './dashboard-components/tasks-filter/tasks-filter.component';
 import { TasksTableComponent } from './dashboard-components/tasks-table/tasks-table.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { VideoplayComponent } from './videoplay/videoplay.component';
+import { DietaryComponent } from './dietary/dietary.component';
 
 @NgModule({
     imports: [
@@ -150,6 +153,9 @@ import { TasksTableComponent } from './dashboard-components/tasks-table/tasks-ta
         TasksComponent,
         TasksFilterComponent,
         TasksTableComponent,
+        ScheduleComponent,
+        VideoplayComponent,
+        DietaryComponent,
     ]
 })
 export class DashboardModule { }

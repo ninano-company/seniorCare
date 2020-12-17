@@ -115,7 +115,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/ticketlist',
+                path: '/dashboard/schedule',
                 title: '일정표',
                 icon: '',
                 class: '',
@@ -188,7 +188,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/ticketlist',
+                path: '/dashboard/videoplay',
                 title: '동영상',
                 icon: '',
                 class: '',
@@ -196,7 +196,7 @@ export const ROUTES: RouteInfo[] = [
                 submenu: []
             },
             {
-                path: '/apps/ticketdetails',
+                path: '/dashboard/dietary',
                 title: '식단표',
                 icon: '',
                 class: '',
